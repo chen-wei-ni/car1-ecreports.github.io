@@ -1,0 +1,739 @@
+﻿<html>
+<head>
+<script src="js/jquery-3.4.1.js"></script>
+<link href="fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+<link href="css/ec.css" rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 7800px)">
+<link href="css/ec_phone.css" rel="stylesheet" media="only screen and (min-width: 0px) and (max-width: 480px)">
+<meta name="viewport"content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<script>
+	$(function(){
+		var $li = $('ul.tab_title li');
+			$($li.eq(0) .addClass('active').find('a').attr('href')).siblings('.tab-inner').hide();
+			
+			$li.click(function(){
+				$($(this).find('a').attr('href')).show().siblings ('.tab-inner').hide();
+				$(this).addClass('active').siblings ('.active').removeClass('active');
+				
+			});
+		$(window).scroll(function(){
+			$('.grid_newon').css({
+			'left':0 -$(this).scrollLeft()
+			});
+		});
+		$('.menu a').click(function() {
+			$('.tab_title').animate({right: 0}, 600);
+		});
+		$('.tab_title p a i').click(function() {
+			$('.tab_title').animate({right: '-360px'}, 600);
+		});
+	});
+
+</script>
+<title>電商上架報表</title>
+</head>
+<body>
+	<div class="menu">
+		<span>車麗屋｜電商上架報表</span>
+		<a href="#">
+			<i class="fas fa-bars"></i>
+		</a>
+	</div>
+	<ul class="tab_title">
+			<p class="close_btn"><a href="#"><i class="fas fa-times"></i></a></p>
+			<li><a href="#tab01">總表</a></li>
+			<li><a href="#tab02">當月上架</a></li>
+			<li><a href="#tab03">新上架名單</a></li>
+			<li><a href="#tab04">門市</a></li>
+			<li><a href="#tab05">未銷售名單</a></li>
+		</ul>
+	<div id="tab_demo">
+		<!--總上架表 -->
+		<div id="tab01" class="tab-inner clearfix">
+			<div class="grid_1">
+				<p class="form1">總上架數</p>
+				<span class="grid_title title-1">
+					<strong>總上架數</strong>
+				</span>
+				<span class="grid_title">
+					<strong>MOMO</strong>
+				</span>
+				<span class="grid_title">
+					<strong>東森</strong>
+				</span>
+				<span class="grid_title">
+					<strong>蝦皮</strong>
+				</span>
+				<span class="grid_title">
+					<strong>FRIDAY</strong>
+				</span>
+				<span class="grid_title">
+					<strong>博客來</strong>
+				</span>
+				<span class="grid_title">
+					<strong>YAHOO</strong>
+				</span>
+				<span class="grid_title">
+					<strong>UDN</strong>
+				</span>
+				<span class="grid_title">
+					<strong>神腦</strong>
+				</span>
+				<span class="grid_title">
+					<strong>外站總計</strong>
+				</span>
+				<span class="grid_title">
+					<strong>外站不重複總計</strong>
+				</span>
+				<span class="grid_title tr_O2O">
+					<strong>O2O</strong>
+				</span>
+				<strong class="category">01影音</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">02消耗修補</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">03輪胎鋁圈</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">04化工油品</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">05百貨</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">06改裝</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">08工資</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">09行銷企劃</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">10贈品</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category">總計</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+			</div>
+			
+			<div class="grid_2020">
+			<p class="form2">有銷售數</p>
+				<span class="grid_title2 title-2">
+					<strong>2020有銷售數</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>MOMO</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>東森</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>蝦皮</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>FRIDAY</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>博客來</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>YAHOO</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>UDN</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>神腦</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>外站總計</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>外站不重複總計</strong>
+				</span>
+				<span class="grid_title2">
+					<strong>O2O</strong>
+				</span>
+				<strong class="category2020 category">01影音</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">02消耗修補</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">03輪胎鋁圈</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">04化工油品</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">05百貨</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">06改裝</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">08工資</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">09行銷企劃</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">10贈品</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">總計</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="外站總計" class="cell">123</span>
+				<span data-th="外站不重複總計" class="cell">123</span>
+				<span data-th="O2O" class="cell">123</span>
+				<strong class="category2020 category">有銷售率</strong>
+				<span data-th="MOMO"class="cell">13.6%</span>
+				<span data-th="東森" class="cell">13.6%</span>
+				<span data-th="蝦皮" class="cell">13.6%</span>
+				<span data-th="FRIDAY" class="cell">13.6%</span>
+				<span data-th="博客來" class="cell">13.6%</span>
+				<span data-th="YAHOO" class="cell">13.6%</span>
+				<span data-th="UDN" class="cell">13.6%</span>
+				<span data-th="神腦" class="cell">13.6%</span>
+				<span data-th="外站總計" class="cell">13.6%</span>
+				<span data-th="外站不重複總計" class="cell">13.6%</span>
+				<span data-th="O2O" class="cell">13.6%</span>
+			</div>
+			<div class="update_time">計算區間:7/22~10/22</div>
+		</div>
+		<div id="tab02" class="tab-inner">
+			<div class="head-02">月新增</div>
+			<div class="grid_2">
+				<span><strong></strong></span>
+				<span><strong>MOMO</strong></span>
+				<span><strong>東森</strong></span>
+				<span><strong>蝦皮</strong></span>
+				<span><strong>FRIDAY</strong></span>
+				<span><strong>博客來</strong></span>
+				<span><strong>YAHOO</strong></span>
+				<span><strong>UDN</strong></span>
+				<span><strong>神腦</strong></span>
+				<span><strong>總計</strong></span>
+				<strong class="category category2">月新增商品數</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="總計" class="cell">123</span>
+				<strong class="category category2">當月銷售商品數</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="總計" class="cell">123</span>
+				<strong class="category category2">有銷售率</strong>
+				<span data-th="MOMO"class="cell">13.6%</span>
+				<span data-th="東森" class="cell">13.6%</span>
+				<span data-th="蝦皮" class="cell">13.6%</span>
+				<span data-th="FRIDAY" class="cell">13.6%</span>
+				<span data-th="博客來" class="cell">13.6%</span>
+				<span data-th="YAHOO" class="cell">13.6%</span>
+				<span data-th="UDN" class="cell">13.6%</span>
+				<span data-th="神腦" class="cell">13.6%</span>
+				<span data-th="總計" class="cell">13.6%</span>
+				<strong class="category category2">當月有銷售數</strong>
+				<span data-th="MOMO"class="cell">123</span>
+				<span data-th="東森" class="cell">123</span>
+				<span data-th="蝦皮" class="cell">123</span>
+				<span data-th="FRIDAY" class="cell">123</span>
+				<span data-th="博客來" class="cell">123</span>
+				<span data-th="YAHOO" class="cell">123</span>
+				<span data-th="UDN" class="cell">123</span>
+				<span data-th="神腦" class="cell">123</span>
+				<span data-th="總計" class="cell">123</span>
+			</div>
+		</div>
+		<div id="tab03" class="tab-inner">
+			<div class="grid_newon">
+				<span>大分類</span>
+				<span>商品原廠編號</span>
+				<span>商品名稱</span>
+				<span>富邦媒體科技股份有限公司</span>
+				<span>東森得易購股份有限公司</span>
+				<span>香港商雅虎資訊股份有限公司台灣</span>
+				<span>博客來數位科技股份有限公司</span>
+				<span>遠時數位科技股份有限公司</span>
+				<span>聯合智網股份有限公司</span>
+				<span>樂購蝦皮股份有限公司</span>
+				<span>總業績</span>
+			</div>
+			<div class="newon_product">
+				<span></span>
+				<span>4.71985E+12</span>
+				<span>洗車機REAIM萊姆HDIX800高壓清洗機</span>
+				<span>5</span>
+				<span>6</span>
+				<span>4</span>
+				<span>5</span>
+				<span>66</span>
+				<span>55</span>
+				<span>55</span>
+				<span>4</span>
+				<span></span>
+				<span>4.71985E+12</span>
+				<span>洗車機REAIM萊姆HDIX800高壓清洗機</span>
+				<span></span>
+				<span></span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>6546</span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span>PRI4-1956515</span>
+				<span>輪胎米其林PRIMACY 4-1956515吋</span>
+				<span></span>
+				<span>20</span>
+				<span>4</span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div id="tab04" class="tab-inner">
+			<div class="table_fliter">
+				<table>
+					<tr class="tr_title">
+						<th class="btn_select">大類名稱</th>
+						<th>貨號</th>
+						<th>商品名稱</th>
+						<th>銷售量</th>
+						<th>未稅銷售額</th>
+						<th>單價</th>					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td>2568</td>
+						<td><i class="fas fa-dollar-sign"></i>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="tab05" class="tab-inner">
+			<div class="table_fliter">
+				<table>
+					<tr class="tr_title">
+						<th class="btn_select">大類名稱</th>
+						<th>貨號</th>
+						<th>商品名稱</th>
+						<th>電商價</th>
+						<th>門市銷量</th>
+						<th>門市銷量金額</th>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td><i class="fas fa-dollar-sign"></i>2568</td>
+						<td>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+					<tr>
+						<td>化工油品</td>
+						<td>4943767160098</td>
+						<td>自排油 速馬力 SPECIAL ATF T-IV 1L</td>
+						<td><i class="fas fa-dollar-sign"></i>2568</td>
+						<td>976426</td>
+						<td><i class="fas fa-dollar-sign"></i>380</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
