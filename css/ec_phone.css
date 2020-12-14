@@ -29,6 +29,7 @@ body {
 		float:right;
 		margin:8px 0 0 0;
 		padding-right:8px;
+		font-size:1rem;
 	}
 .tab_title { /*跳出選單*/
 	position:fixed;
@@ -39,7 +40,7 @@ body {
 	list-style:none;
 	background-color:rgba(78,82,102);	
 	height:100%;
-	width:120px;
+	width:180px;
 	z-index:10;/*移至最上層*/
 }
 	.close_btn {
@@ -51,10 +52,11 @@ body {
 		text-align:right;
 		float:right;
 		padding:5px 8px 0 0;
+		font-size:1.2rem;
 	}
 	.tab_title li {
 		padding:15px 0 10px 10px;
-		font-size:0.9rem;
+		font-size:1rem;
 	}
 	.tab_title li a {
 		color:#fff;
